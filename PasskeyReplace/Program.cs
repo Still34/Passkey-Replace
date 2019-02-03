@@ -20,7 +20,7 @@ namespace PasskeyReplace
             if (prevKey == null || newKey == null)
                 ErrorAndExit("You must specify a before and after key.");
             if (prevKey.Length != newKey.Length)
-                ErrorAndExit($"The keys must have the same length. Old key is ({oldKey.Length}), and new key is ({newKey.Length}).");
+                ErrorAndExit($"The keys must have the same length. Old key is ({prevKey.Length}), and new key is ({newKey.Length}).");
 
             // Get files and prep for operation
             var files = input.GetFiles();
